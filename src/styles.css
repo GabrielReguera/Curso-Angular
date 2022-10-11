@@ -7,3 +7,10 @@
 a{
     color: blueviolet;
 }
+
+.class{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em 0 1em 0;
+    border: solid 1px darkblue;
+}
