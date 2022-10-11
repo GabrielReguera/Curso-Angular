@@ -1,0 +1,11 @@
+<div class="class">
+  <p *ngIf="Show">Display message</p>
+  <button (click)="showMessage()">Click Here!</button>
+  <h3 (mouseout)="moveMouse()" *ngIf="showMouse; else newMouse">
+    Move the mouse
+  </h3>
+
+  <ng-template #newMouse>
+    <h3 (mousemove)="moveMouse()" >🐀</h3>
+  </ng-template>
+</div>
