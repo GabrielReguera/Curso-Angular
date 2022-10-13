@@ -6,6 +6,10 @@
       <button (click)="showAge(animal)">Show age</button>
       <button (click)="removeAnimal(animal)">Remove</button>
     </li>
+    <p>--------------------------------------------------------</p>
+    <li *ngFor="let anime of animes">
+      Name: {{ anime.name }} - Eps: {{ anime.eps }}
+    </li>
   </ul>
   <h4>{{ animalsDetails }}</h4>
 </div>
